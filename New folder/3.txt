@@ -1,0 +1,9 @@
+sudo apt-get install git git clone https://github.com/noxrepo/pox.git
+cd pox
+./pox.py forwarding.l2_learning
+sudo mn --topo single,3 --mac --arp--switch ovsk --controller=remote
+mininet>xterm h1
+pingall
+iperf h1,h2
+sudo mn
+start wireshark

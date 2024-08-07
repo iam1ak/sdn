@@ -1,0 +1,15 @@
+echo install docker
+
+https://docs.docker.com/engine/install/ubuntu/
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+
+sudo apt install docker-ce
+echo start docker
+sudo systemctl status docker
+echo install vim-emu using nested docker
+git clone https://osm.etsi.org/gerrit/osm/vim-emu.git or git clone https://osm.etsi.org/gitlab/osm/vim-emu.git
+
+cd ~/vim-emu
+	docker build -t vim-emu-img
+echo start the containernet
+docker run --name vim-emu --it --rn --privileged --pid='host' --v/var/run/run/docker.sock:/var/run/docker.sock vin-emu-img/bin/bash

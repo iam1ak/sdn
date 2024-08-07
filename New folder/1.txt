@@ -1,0 +1,26 @@
+sudo apt-get update
+sudo apt-get install mininet
+mn --version
+sudo mn --switch ovsbr --test pingall
+sudo apt-get install openvswitch --switch
+sudo mn
+mininet>nodes,net,dump
+
+kathara
+
+sudo add-apt repository ppa:katharaframework/kathara
+sudo apt update
+sudo apt install kathara
+sudo apt install docker.io
+sudo apt install xterm
+kathara --version
+sudo kathara vstart -n name
+
+
+GNS3
+
+sudo add-apt repository ppa:gns3/ppa
+sudo apt update
+sudo apt install gns3-gui gns3-server
+sudo apt install docker-cs
+gns3

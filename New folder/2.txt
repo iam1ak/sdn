@@ -1,0 +1,7 @@
+sudo apt-get install git git clone https:\\github.com\noxrepo\pox.git
+cd pox
+./pox.py forwarding.l2_learning
+sudo apt-get install wireshark
+sudo mn --controller=remote,ip=127.0.0.1,port=6633 --topo single,2
+sudo mn
+sudo wireshark
